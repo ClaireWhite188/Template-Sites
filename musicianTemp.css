@@ -1,0 +1,143 @@
+:root {
+  --bg: #f7f3ef;
+  --text: #1f1a17;
+  --muted: #6f675f;
+  --accent: #b88c72;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+header {
+  padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.hero-wrap {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--text);
+  color: white;
+  margin-right: 10px;
+}
+
+.button.secondary {
+  background: transparent;
+  border: 1px solid var(--text);
+  color: var(--text);
+}
+
+.hero-image {
+  width: 300px;
+  height: 400px;
+  background: url('https://images.unsplash.com/photo-1516280440614-37939bbacd81') center/cover;
+}
+
+.about-grid {
+  display: flex;
+  gap: 30px;
+}
+
+.about-image {
+  width: 300px;
+  height: 300px;
+  background: url('https://images.unsplash.com/photo-1501386761578-eac5c94b800a') center/cover;
+}
+
+.card {
+  padding: 20px;
+  background: white;
+}
+
+.work-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.work-thumb {
+  height: 200px;
+  background-size: cover;
+}
+
+.work-thumb.one {
+  background-image: url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f');
+}
+
+.work-thumb.two {
+  background-image: url('https://images.unsplash.com/photo-1501612780327-45045538702b');
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.link-card {
+  padding: 15px;
+  background: white;
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
